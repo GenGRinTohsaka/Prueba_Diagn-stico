@@ -3,7 +3,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Computadora extends DispositivoController{
+public class Computadora extends Dispositivo{
 
     private String sistemaOperativo;
 

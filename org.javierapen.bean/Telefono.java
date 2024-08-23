@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Telefono extends DispositivoController{
+public class Telefono extends Dispositivo{
     
     private String tipo;
 

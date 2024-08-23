@@ -3,7 +3,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode (callSuper = true)
-public class Televisor extends DispositivoController{
+public class Televisor extends Dispositivo{
 
     private int tamanoPantalla;
 
