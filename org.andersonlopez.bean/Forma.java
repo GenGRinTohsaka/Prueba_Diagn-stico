@@ -2,10 +2,17 @@ import lombok.Data;
 
 @Data
 public abstract class Forma {
-
     private String color;
 
     public Forma(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
         this.color = color;
     }
 
@@ -13,7 +20,8 @@ public abstract class Forma {
 
     public double calcularArea(String mensaje) {
         System.out.println(mensaje);
-        return calcularArea(); 
+        return calcularArea();
     }
-}
 
+    public abstract double calcularArea(double ajuste);
+}

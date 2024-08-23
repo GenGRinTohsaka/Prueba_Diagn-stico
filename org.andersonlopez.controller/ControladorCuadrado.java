@@ -15,4 +15,9 @@ public class ControladorCuadrado implements ControladorForma {
         System.out.println(mensaje);
         return cuadrado.calcularArea();
     }
+
+    @Override
+    public double calcularArea(double ajuste) {
+        return cuadrado.calcularArea(ajuste);
+    }
 }

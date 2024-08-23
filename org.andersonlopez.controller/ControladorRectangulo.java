@@ -15,4 +15,9 @@ public class ControladorRectangulo implements ControladorForma {
         System.out.println(mensaje);
         return rectangulo.calcularArea();
     }
+
+    @Override
+    public double calcularArea(double ajuste) {
+        return rectangulo.calcularArea(ajuste);
+    }
 }

@@ -19,6 +19,11 @@ public class Rectangulo extends Forma {
         return largo * ancho;
     }
 
+    @Override
+    public double calcularArea(double ajuste) {
+        return calcularArea() + ajuste;
+    }
+
     public double calcularArea(String mensaje) {
         System.out.println(mensaje);
         return calcularArea();

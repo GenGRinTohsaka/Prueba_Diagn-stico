@@ -15,4 +15,9 @@ public class ControladorTriangulo implements ControladorForma {
         System.out.println(mensaje);
         return triangulo.calcularArea();
     }
+
+    @Override
+    public double calcularArea(double ajuste) {
+        return triangulo.calcularArea(ajuste);
+    }
 }

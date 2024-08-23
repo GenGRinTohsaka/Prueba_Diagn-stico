@@ -15,4 +15,9 @@ public class ControladorCirculo implements ControladorForma {
         System.out.println(mensaje);
         return circulo.calcularArea();
     }
+
+    @Override
+    public double calcularArea(double ajuste) {
+        return circulo.calcularArea(ajuste);
+    }
 }

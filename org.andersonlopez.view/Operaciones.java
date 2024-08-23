@@ -43,7 +43,6 @@ public class Operaciones {
 
             if (controlador != null) {
                 System.out.println("Área calculada: " + controlador.calcularArea());
-                System.out.println("Área con ajuste: " + controlador.calcularArea("Calculando área con ajuste:"));
             }
 
             System.out.println();

@@ -17,6 +17,11 @@ public class Cuadrado extends Forma {
         return lado * lado;
     }
 
+    @Override
+    public double calcularArea(double ajuste) {
+        return calcularArea() + ajuste;
+    }
+
     public double calcularArea(String mensaje) {
         System.out.println(mensaje);
         return calcularArea();

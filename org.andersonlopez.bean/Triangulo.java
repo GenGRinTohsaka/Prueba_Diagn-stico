@@ -19,6 +19,11 @@ public class Triangulo extends Forma {
         return (base * altura) / 2;
     }
 
+    @Override
+    public double calcularArea(double ajuste) {
+        return calcularArea() + ajuste;
+    }
+
     public double calcularArea(String mensaje) {
         System.out.println(mensaje);
         return calcularArea();
