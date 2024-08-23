@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("waza");
+        EmpleadoView start = new EmpleadoView();
+        start.Menu();
     }
 }
