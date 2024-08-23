@@ -7,13 +7,20 @@ public class Triangulo extends Forma {
     private double base;
     private double altura;
 
+    // Constructor
+    public Triangulo(String color, double base, double altura) {
+        super(color);
+        this.base = base;
+        this.altura = altura;
+    }
+
     @Override
     public double calcularArea() {
         return (base * altura) / 2;
     }
 
-    @Override
-    public double calcularArea(double ajuste) {
-        return calcularArea() + ajuste;
+    public double calcularArea(String mensaje) {
+        System.out.println(mensaje);
+        return calcularArea();
     }
 }
