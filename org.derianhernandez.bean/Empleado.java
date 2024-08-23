@@ -7,7 +7,13 @@ abstract class Empleado {
     private int edad;
     private double salario;
 
-    abstract void trabajar();
-
-    void trabajar(int horas){}
+    public abstract void trabajar();
+    
+    void trabajar(int horas){
+        System.out.println("El empleado trabajo: " + horas);
+    }
+    
+    public void trabajar(String proyecto){
+        System.out.println("Trabajando proyecto: " + proyecto);
+    }
 }
